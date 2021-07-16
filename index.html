@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title> CWAS </title>
+        <meta charset="uft-8">
+        <style>
+            @font-face {
+            font-family: 'MyLotteBold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.0/MyLotteBold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            }
+            h1{
+                font-family: 'MyLotteBold';
+                color : rgba(50,50,50,1);
+                font-size: 5vw;
+                font-weight: 900;
+                text-align: center;
+                margin:0;
+                word-break: break-all;
+                padding: 1%
+            }
+
+            #grid{
+                /* display: grid; */
+                /* grid-template-rows: 0.6fr 1.2fr; */
+                /* grid-template-rows: 30vh 70vh; */
+
+            }
+
+            #grid #main_img{
+                text-align: center;
+                display: block;
+                /* background: red; */
+                padding: 0%;
+                padding-top: 1vh;
+                color : rgba(50,50,50,1);
+            }
+
+            #grid #id_pw_but{
+                /* background: violet; */
+                /* display: grid;
+                grid-template-rows: 0.5fr 0.2fr 0.2fr; */
+            }
+
+            #grid #id_pw_but #id_pw{
+                text-align: center;
+                display: block;
+                font-family: 'MyLotteBold';
+                font-size: 3vw;
+                font-weight: 800;
+                padding: 0%;
+                color : rgba(50,50,50,1);
+            }
+
+            #grid #id_pw_but #butt_up{
+                font-family: 'MyLotteBold';
+                text-align: center;
+                font-size: 2vw;
+                padding: 0%;
+                color : rgba(50,50,50,1);
+            }
+
+            #grid #id_pw_but #butt_dn{
+                font-family: 'MyLotteBold';
+                text-align: center;
+                padding: 0%
+            
+            }
+
+        </style>
+    </head>
+
+    
+    <body>
+        <br><br><br>        
+        <div id="grid">
+            <div id="main_img">
+                <a href="http://www.bucketcrane.com" target="blank"><img src="./img/kiyeon.jpg" style="max-width:15%; height:auto"></a> <a href="http://www.bucketcrane.com" target="blank"><img src="./img/data.jpg" style="max-width:15%; height:auto"></a>
+                <br><br><br>
+                <H1> CheongWon Alram System</h1> <br><br>
+            </div> 
+
+            <div id="id_pw_but">
+                <div id="id_pw">
+                    ID&nbsp;&nbsp; <input type="text" maxlength="20" style="width:20vw; font-size:2vw; border: 2px solid rgba(50,50,50,1);"> <br>
+                    PW <input type="text" maxlength="20" style="width:20vw; font-size:2vw; border: 2px solid rgba(50,50,50,1);"> <br><br>
+                </div>
+
+                <div id="butt_up">
+                    <input type="checkbox" style="width:2vw; height:2vw"> Remember Me &nbsp;&nbsp;&nbsp;
+                    <input type="button" value="Sign On" style="color: white; width:10vw; height:3vw; font-size:2vw; font-family:MyLotteBold; font-weight: 800; background-color: rgba(50,50,50,1); border:0"
+                    onclick="location.href='eyeofcw.html'">
+                    <!-- <input type="button" value="Sign On" onclick="location.href='2.html'"> -->
+                    <br><br>
+                </div>
+
+                <div id="butt_dn">
+                    <input type="button" value="Sign Up Now" style="color: white; width:15vw; height:3vw; font-size:2vw; font-family:MyLotteBold; font-weight: 800; background-color: rgba(50,50,50,1); border:0"
+                    onclick="document.querySelector('body').style.backgroundColor = 'pink';"> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="Forget ID/PW" style="color: white; width:15vw; height:3vw; font-size:2vw; font-family:MyLotteBold; font-weight: 800; background-color: rgba(50,50,50,1); border:0"
+                    onclick="document.querySelector('body').style.backgroundColor = 'violet';">
+                </div>
+            </div>
+
+
+        </div>
+
+    </body>
+
+</html>
